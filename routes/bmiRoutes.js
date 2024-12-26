@@ -23,6 +23,7 @@ router.post('/', (req, res) => {
     fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 
     res.send(`
+    <link rel="stylesheet" href="style.css">
         <div class="container mt-5">
             <div class="card text-center">
                 <div class="card-header">
@@ -51,6 +52,7 @@ router.get('/history', (req, res) => {
     ).join('');
 
     res.send(`
+    <link rel="stylesheet" href="style.css">
         <div class="container mt-5">
             <h2>BMI History</h2>
             <table class="table table-striped">

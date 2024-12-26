@@ -1,13 +1,133 @@
+/* Основные стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+/* Заголовки */
+h2, h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+/* Карточка */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .card-header {
-    background-color: #007bff;
-    color: white;
+    background: #6a11cb;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.card-body h4 {
-    color: #007bff;
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin: 0;
+}
+
+/* Таблица */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table thead {
+    background: #2575fc;
+    color: #fff;
+}
+
+.table thead th {
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #eaf5f1;
+}
+
+.table tbody td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.table tbody tr:hover {
+    background: #d1f1e1;
+    transition: background-color 0.3s ease;
+}
+
+/* Границы таблицы */
+.table th,
+.table td {
+    border: 1px solid #ddd;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #2575fc;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #6a11cb;
+    text-decoration: none;
+}
+
+.mt-3 {
+    margin-top: 20px;
 }
